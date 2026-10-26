@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <title>BLACKOUT — a monochrome forest shooter by achlys20</title>
+  <meta name="description" content="BLACKOUT is a five-sector monochrome forest shooter. Play in your browser, or download for macOS and Windows. Created by achlys20.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://adamusulaiman-codes.github.io/blackout/">
+  <meta property="og:site_name" content="BLACKOUT">
+  <meta property="og:title" content="BLACKOUT">
+  <meta property="og:description" content="Carve the ground. Break the Warden. Learn to fly. A monochrome forest shooter by achlys20.">
+  <meta property="og:image" content="https://adamusulaiman-codes.github.io/blackout/assets/cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="https://adamusulaiman-codes.github.io/blackout/">
+  <link rel="icon" href="assets/icon.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <a class="wordmark" href="#top" aria-label="BLACKOUT home">BLACKOUT</a>
+    <p class="credit">Created by <strong>achlys20</strong></p>
+    <nav aria-label="Primary">
+      <a href="#play">Play</a>
+      <a href="#download">Download</a>
+      <a href="#warden">The Warden</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="kicker">A game by achlys20</p>
+        <h1>BLACKOUT</h1>
+        <p class="lede">A five-sector monochrome forest shooter. Carve the ground open, break a giant, and learn to fly.</p>
+
+        <div class="actions">
+          <a class="button button-primary" href="#play" data-launch>Play in browser</a>
+          <a class="button button-ghost" href="#download">Download</a>
+        </div>
+
+        <p class="platform-line">macOS 11+ <span>/</span> Windows 10/11 x64 <span>/</span> desktop browser</p>
+      </div>
+
+      <figure class="hero-art">
+        <img src="assets/gameplay.png" alt="The cube player firing a heavy machine gun into the forest floor, opening a crater." width="1600" height="900">
+        <figcaption><span>HMG</span> SHREDS STRUCTURES</figcaption>
+      </figure>
+    </section>
+
+    <section class="play-section" id="play">
+      <div class="section-head">
+        <p class="section-index">Browser run</p>
+        <h2>Straight into the trees.</h2>
+        <p>Jump with W. Keep holding W to fly. Move with A/D, aim with the mouse, and put a hole in anything that looks load-bearing.</p>
+      </div>
+
+      <div class="game-shell" id="gameShell">
+        <img class="game-poster" src="assets/destruction.png" alt="A heavy machine gun carving a crater into the forest floor." width="1600" height="900">
+        <div class="game-overlay" id="gameOverlay">
+          <button class="button button-primary button-large" id="launchButton" type="button">Launch run</button>
+          <p>Loads the browser build. Keyboard and mouse. Sound on.</p>
+        </div>
+        <iframe id="gameFrame" title="BLACKOUT browser game" data-src="play/index.html" allow="autoplay; fullscreen; gamepad"></iframe>
+      </div>
+
+      <div class="game-tools">
+        <p class="note">The browser build is the full game. If the frame feels small, use fullscreen.</p>
+        <div class="tool-links">
+          <a href="play/index.html" target="_blank" rel="noopener">Open standalone</a>
+          <button type="button" id="fullscreenButton">Fullscreen</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-copy">
+        <p class="section-index">The run</p>
+        <h2>The forest is not cover. It is ammunition.</h2>
+        <p>BLACKOUT moves through Pale Trail, Fern Gallery, Hollow Grove, Charcoal Camp, and the Warden's Clearing. The painted forest holds the depth. The ground, trees, boulders, camps, and root bridges are built to come apart.</p>
+        <p>Enemies flank, take cover, dodge rockets, and pull the next squad into the fight. The rocket launcher does 700 anti-armor damage. The HMG is still the long argument.</p>
+      </div>
+      <dl class="spec-list">
+        <div><dt>Weapons</dt><dd>Seven, from sidearm to 700-damage rocket.</dd></div>
+        <div><dt>Terrain</dt><dd>Two carvable layers over bedrock. Holes stay.</dd></div>
+        <div><dt>Flight</dt><dd>W jump. Hold W for variable-height boost.</dd></div>
+        <div><dt>Boss</dt><dd>12,000 health. Two forms. One heartwood core.</dd></div>
+      </dl>
+    </section>
+
+    <section class="warden" id="warden">
+      <div class="warden-copy">
+        <p class="section-index">The Warden</p>
+        <h2>He does not get smaller.</h2>
+        <p>At half health the Warden rips roots out of the arena and grows into the Rootbound form. Antlers. Bark armor. An exposed heartwood core. Leap slams, root cages, canopy barrages, ground sweeps, and a below-25% Heartwood Overload.</p>
+        <p>A Phase II checkpoint means death resumes at the Rootbound fight. Two health caches open the fight; one more appears at Phase II. Nothing else heals you.</p>
+        <a class="text-link" href="#play">Take the run <span aria-hidden="true">→</span></a>
+      </div>
+      <figure class="warden-art">
+        <img src="assets/rootbound-crop.png" alt="The Rootbound Warden: a giant cube with antlers, bark armor, and an orange heartwood core." width="1600" height="900">
+        <figcaption>PHASE II // ROOTBOUND</figcaption>
+      </figure>
+    </section>
+
+    <section class="downloads" id="download">
+      <div class="section-head download-head">
+        <p class="section-index">Downloads</p>
+        <h2>Take it off the browser.</h2>
+        <p>Both builds are complete. The browser version above is the same run.</p>
+      </div>
+
+      <div class="download-grid">
+        <a class="download-row" href="downloads/BLACKOUT-macOS.zip" download>
+          <span class="platform">macOS</span>
+          <span class="build-meta">Universal / 60 MB</span>
+          <span class="download-action">Download</span>
+        </a>
+        <a class="download-row" href="downloads/BLACKOUT-Windows-x64.zip" download>
+          <span class="platform">Windows</span>
+          <span class="build-meta">x64 / 40 MB</span>
+          <span class="download-action">Download</span>
+        </a>
+      </div>
+
+      <div class="download-notes">
+        <p><strong>macOS:</strong> unzip and open <code>BLACKOUT.app</code>. It is ad-hoc signed; if Gatekeeper asks, right-click → Open.</p>
+        <p><strong>Windows:</strong> unzip the whole folder. Keep <code>BLACKOUT.pck</code> beside <code>BLACKOUT.exe</code>. SmartScreen may ask for “More info → Run anyway”.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-mark">BLACKOUT</div>
+    <div class="footer-copy">
+      <p>Created by <strong>achlys20</strong>.</p>
+      <p>Built in Godot 4.7.1. Fonts: Bebas Neue and IBM Plex Mono. No third-party audio samples.</p>
+      <p>© 2026 achlys20. Stylized gun violence, explosions, and brief screen flashes.</p>
+    </div>
+    <a class="footer-top" href="#top">Back to top</a>
+  </footer>
+</body>
+</html>
