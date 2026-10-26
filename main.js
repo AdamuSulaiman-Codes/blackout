@@ -3,6 +3,7 @@
   const frame = document.getElementById("gameFrame");
   const launch = document.getElementById("launchButton");
   const fullscreen = document.getElementById("fullscreenButton");
+  const sound = document.getElementById("soundButton");
   let loaded = false;
 
   function startGame() {
@@ -12,7 +13,10 @@
       loaded = true;
       shell.classList.add("is-live");
       frame.addEventListener("load", () => {
-        try { frame.contentWindow.focus(); } catch (_) {}
+        try {
+          frame.contentWindow.blackoutAudioUnlock?.();
+          frame.contentWindow.focus();
+        } catch (_) {}
       }, { once: true });
     }
     shell.scrollIntoView({ behavior: "smooth", block: "center" });
@@ -28,6 +32,14 @@
       startGame();
       history.replaceState(null, "", "#play");
     });
+  });
+
+  sound?.addEventListener("click", () => {
+    try {
+      frame?.contentWindow.blackoutAudioUnlock?.();
+      frame?.contentWindow.focus();
+      sound.textContent = "Sound on";
+    } catch (_) {}
   });
 
   fullscreen?.addEventListener("click", async () => {

@@ -65,13 +65,14 @@
           <button class="button button-primary button-large" id="launchButton" type="button">Launch run</button>
           <p>Loads the browser build. Keyboard and mouse. Sound on.</p>
         </div>
-        <iframe id="gameFrame" title="BLACKOUT browser game" data-src="play/index.html" allow="autoplay; fullscreen; gamepad"></iframe>
+        <iframe id="gameFrame" title="BLACKOUT browser game" data-src="play/index.html?v=2" allow="autoplay; fullscreen; gamepad"></iframe>
       </div>
 
       <div class="game-tools">
         <p class="note">The browser build is the full game. If the frame feels small, use fullscreen.</p>
         <div class="tool-links">
-          <a href="play/index.html" target="_blank" rel="noopener">Open standalone</a>
+          <a href="play/index.html?v=2" target="_blank" rel="noopener">Open standalone</a>
+          <button type="button" id="soundButton">Sound</button>
           <button type="button" id="fullscreenButton">Fullscreen</button>
         </div>
       </div>
