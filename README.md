@@ -1,5 +1,7 @@
 # BLACKOUT website
 
+Live at **https://adamusulaiman-codes.github.io/blackout/**
+
 Static site for **BLACKOUT**, created by **achlys20**.
 
 - `index.html` — landing page
