@@ -26,7 +26,7 @@ The site is built for the repository root:
 2. Settings → Pages → Source: Deploy from a branch → `main` / `/ (root)`.
 3. `.nojekyll` is included.
 
-The host must serve `.wasm` as `application/wasm` (GitHub Pages does). Browser audio starts after the Play click.
+The host must serve `.wasm` as `application/wasm` (GitHub Pages does). Browser audio starts after the Play click. On touch devices the game shows twin-stick controls; add `?touch=1` to a direct `play/index.html` URL to preview them on desktop.
 
 ## Credits
 
