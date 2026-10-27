@@ -6,7 +6,7 @@ Static site for **BLACKOUT**, created by **achlys20**.
 
 - `index.html` — landing page
 - `play/` — Godot HTML5 build (`index.html` at the root of this folder)
-- `downloads/` — macOS and Windows zips; the Android APK ships as a GitHub release asset
+- GitHub release `v1.0` — macOS, Windows, and Android APK assets
 - `assets/` — stills, cover, fonts
 
 ## Run locally
